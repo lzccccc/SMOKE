@@ -1,4 +1,4 @@
-# SMOKE
+# SMOKE: Single-Stage Monocular 3D Object Detection via Keypoint Estimation
 
 <img align="center" src="figures/animation.gif" width="750">
 
@@ -63,7 +63,7 @@ python setup.py build develop
 
 4. Link to dataset directory:
 ```
-cd ~/SMOKE
+mkdir datasets
 ln -s /path_to_kitti_dataset datasets/kitti
 ```
 
