@@ -2,6 +2,8 @@
 
 <img align="center" src="figures/animation.gif" width="750">
 
+[Video](https://www.youtube.com/watch?v=pvM_bASOQmo)
+
 This repository is the official implementation of our paper [SMOKE: Single-Stage Monocular 3D Object Detection via Keypoint Estimation](https://arxiv.org/pdf/2002.10111.pdf).
 For more details, please see our paper.
 
