@@ -55,7 +55,7 @@ class Checkpointer():
             # no checkpoint could be found
             self.logger.info("No checkpoint found. Initializing model from scratch")
             return {}
-        self.logger.info("Loading checkpoing from {}".format(f))
+        self.logger.info("Loading checkpoint from {}".format(f))
         checkpoint = self._load_file(f)
         self._load_model(checkpoint)
         if getattr(self.cfg['SOLVER'], 'LOAD_OPTIMIZER_SCHEDULER'):
