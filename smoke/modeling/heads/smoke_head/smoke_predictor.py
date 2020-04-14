@@ -38,7 +38,7 @@ class SMOKEPredictor(nn.Module):
 
         assert sum(regression_channels) == regression, \
             "the sum of {} must be equal to regression channel of {}".format(
-                cfg.MODEL.SMOKE_HEAD.REGRESSION_CHANNEL, cfg.MODEL.SMOKE_HEAD.HEADS
+                cfg.MODEL.SMOKE_HEAD.REGRESSION_CHANNEL, cfg.MODEL.SMOKE_HEAD.REGRESSION_HEADS
             )
 
         self.dim_channel = get_channel_spec(regression_channels, name="dim")
