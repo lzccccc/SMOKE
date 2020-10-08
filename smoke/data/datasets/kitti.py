@@ -153,7 +153,10 @@ class KITTIDataset(Dataset):
             rot_y = np.array(a["rot_y"])
             if flipped:
                 locs[0] *= -1
-                rot_y *= -1
+                if rot_y < 0:
+                    rot_y = -np.pi - rot_y
+                else:
+                    rot_y = np.pi - rot_y
 
             point, box2d, box3d = encode_label(
                 K, rot_y, a["dimensions"], locs
