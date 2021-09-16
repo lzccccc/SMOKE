@@ -50,7 +50,7 @@ kitti
 ## Setup
 1. We use `conda` to manage the environment:
 ```
-conda create -n SMOKE python=3.7
+conda env create -f environment.yml
 ```
 
 2. Clone this repo:
@@ -105,3 +105,5 @@ Please cite our paper if you find SMOKE is helpful for your research.
   year={2020}
 }
 ```
+Available at [here](https://arxiv.org/abs/2002.10111)
+
